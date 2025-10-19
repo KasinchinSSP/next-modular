@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@pkg/ui/*": ["packages/ui/*"],
+      "@pkg/modules/*": ["packages/modules/*"],
+      "@pkg/composer/*": ["packages/composer/*"],
+      "@pkg/api/*": ["packages/api/*"],
+      "@pkg/config/*": ["packages/config/*"]
+    }
+  }
+}
