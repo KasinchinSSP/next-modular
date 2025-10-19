@@ -1,0 +1,1 @@
+# NextModular — Minimal Monorepo (POC)
