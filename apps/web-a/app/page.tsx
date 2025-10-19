@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Hero } from "@pkg/modules/hero";
+import { Hero } from "@pkg/modules";
 
 export default function Home() {
   return (

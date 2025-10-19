@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button } from "@pkg/ui/button";
+import { Button } from "@pkg/ui";
 
 type HeroProps = { title: string; subtitle?: string; ctaText?: string };
 

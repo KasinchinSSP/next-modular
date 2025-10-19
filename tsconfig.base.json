@@ -10,7 +10,9 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
+      "@pkg/ui": ["packages/ui/index.ts"],
       "@pkg/ui/*": ["packages/ui/*"],
+      "@pkg/modules": ["packages/modules/index.ts"],
       "@pkg/modules/*": ["packages/modules/*"]
     }
   }
