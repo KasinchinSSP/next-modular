@@ -1,5 +1,17 @@
 {
   "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+
+    // สำคัญสำหรับ path alias
     "baseUrl": ".",
     "paths": {
       "@pkg/ui/*": ["packages/ui/*"],
@@ -7,6 +19,10 @@
       "@pkg/composer/*": ["packages/composer/*"],
       "@pkg/api/*": ["packages/api/*"],
       "@pkg/config/*": ["packages/config/*"]
-    }
+    },
+
+    // Next.js ใช้ปลั๊กอินนี้ได้ในแต่ละแอป (เราจะใส่ในไฟล์ลูก)
+    // "plugins": [{ "name": "next" }]
+    "incremental": true
   }
 }
