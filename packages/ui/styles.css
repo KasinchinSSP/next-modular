@@ -1,0 +1,15 @@
+/* Default tokens (dark, สบายตา) */
+:root {
+  /* base */
+  --nm-bg: #0b0f14; /* ดำอมฟ้าเข้ม */
+  --nm-surface: #111827; /* เทาเข้ม (gray-900) */
+  --nm-fg: #f9fafb; /* ขาวนวล (gray-50) */
+
+  /* brand-like */
+  --nm-primary: #374151; /* เทาเข้ม (gray-700) */
+  --nm-secondary: #9ca3af; /* เทาอ่อน (gray-400) */
+  --nm-border: #1f2937; /* เส้นขอบ (gray-800) */
+
+  /* radius */
+  --nm-radius-md: 10px;
+}

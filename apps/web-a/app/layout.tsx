@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./globals.css"; // Tailwind
+import "@pkg/ui/styles.css"; // Default tokens (กลาง)
+import "../theme.css"; // Override tokens (เฉพาะเว็บนี้)
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="bg-[color:var(--nm-bg)] text-[color:var(--nm-fg)]">
         {children}
       </body>
     </html>
