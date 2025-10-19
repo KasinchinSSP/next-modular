@@ -1,8 +1,0 @@
-{
-  "private": true,
-  "packageManager": "pnpm@9.0.0",
-  "scripts": {
-    "dev:a": "pnpm --filter @app/web-a dev",
-    "dev:b": "pnpm --filter @app/web-b dev"
-  }
-}
