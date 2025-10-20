@@ -1,6 +1,4 @@
-import type { ModuleKey } from "@pkg/modules";
-
-type Block = { key: ModuleKey; props: Record<string, unknown> };
+import type { Block } from "@pkg/modules";
 
 const home: Block[] = [
   {
@@ -8,6 +6,13 @@ const home: Block[] = [
     props: {
       title: "NextModular — Web A",
       subtitle: process.env.NEXT_PUBLIC_BRAND,
+    },
+  },
+  {
+    key: "feature-list",
+    props: {
+      title: "Why choose A",
+      items: ["Fast", "Reliable", "Customizable"],
     },
   },
 ];

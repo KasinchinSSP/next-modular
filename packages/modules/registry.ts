@@ -1,11 +1,11 @@
 import { Hero, type HeroProps } from "./hero";
+import { FeatureList, type FeatureListProps } from "./feature-list";
 
-export type ModuleKey = "hero"; // เพิ่มคีย์อื่นเมื่อมีโมดูลใหม่
+export type Block =
+  | { key: "hero"; props: HeroProps }
+  | { key: "feature-list"; props: FeatureListProps };
 
-export type Registry = {
-  hero: { component: typeof Hero; props: HeroProps };
-};
-
-export const modules: Registry = {
-  hero: { component: Hero, props: {} as HeroProps },
-};
+export const modules = {
+  hero: { component: Hero },
+  "feature-list": { component: FeatureList },
+} as const;
